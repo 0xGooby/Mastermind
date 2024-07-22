@@ -16,7 +16,7 @@ BOX_WIDTH = 80
 BOX_HEIGHT = 90
 BLACK = (0, 0, 0)
 
-list_of_colors = ["Black", "Blue", "Orange", "Red", "Green", "Purple"]
+list_of_colors = ["Grey", "Blue", "Orange", "Red", "Green", "Purple"]
 
 guesses = []
 
@@ -35,7 +35,7 @@ green_button = Button(100, "Green")
 blue_button = Button(150, "Blue")
 orange_button = Button(200, "Orange")
 purple_button = Button(250, "Purple")
-black_button = Button(300, "Black")
+black_button = Button(300, "Grey")
 
 # perfect_guess = Help(350, "Green")
 # misplaced_guess = Help(380, "Red")
@@ -120,7 +120,7 @@ while True:
                     ball_x = BOX_WIDTH + 20
                     ball_y -= 90
             if black_button.rect.collidepoint(event.pos):
-                find_answer("Black", ball_x, ball_y)
+                find_answer("Grey", ball_x, ball_y)
                 ball_x += 80
                 if len(guesses) % 4 == 0:
                     ball_x = BOX_WIDTH + 20
